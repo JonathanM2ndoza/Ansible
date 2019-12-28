@@ -36,7 +36,7 @@ jmendoza@jmendoza-ThinkPad-T420:~$ docker inspect ubuntu
 
 ![Screenshot](/Prtsc/Ansible_4.png)
 
-![Screenshot](/Prtsc/Ansible_5.png)
+![Screenshot](/Prtsc/Ansible_5.1.png)
 
 ### Configure your user to access with ssh (Managed Node)
 
@@ -46,4 +46,4 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo vim /etc/ansible/ansible.cfg
 
 ## Ansible ad-hoc command 
 
-![Screenshot](/Prtsc/Ansible_7.png)
+![Screenshot](/Prtsc/Ansible_7.1.png)

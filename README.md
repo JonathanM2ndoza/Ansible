@@ -1,6 +1,6 @@
 # Ansible
 
-Example of how to use Ansible with Playbooks
+Example of how to use Ansible
 
 ## Install Ansible on Ubuntu 18.04.3 LTS
 
@@ -20,9 +20,22 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo apt-get install ansible -y
 
 ## Ansible Inventory
 
+Add your host in /etc/ansible/hosts 
+
 jmendoza@jmendoza-ThinkPad-T420:~$ sudo vim /etc/ansible/hosts 
 
 ![Screenshot](/Prtsc/Ansible_2.png)
 
+### Configure your host to access with ssh
+
+See file commands.txt
+
+![Screenshot](/Prtsc/Ansible_3.png)
+
+jmendoza@jmendoza-ThinkPad-T420:~$ docker inspect ubuntu
+
+![Screenshot](/Prtsc/Ansible_4.png)
+
+![Screenshot](/Prtsc/Ansible_5.png)
 
 

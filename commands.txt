@@ -1,4 +1,50 @@
-##############Docker Image Ubuntu##############
+##############Docker Image Ubuntu (Host)##############
 jmendoza@jmendoza-ThinkPad-T420:~$ docker pull ubuntu
 jmendoza@jmendoza-ThinkPad-T420:~$ docker run -it --name ubuntu -d ubuntu:latest
 
+##############Allow SSH root login on Ubuntu##############
+jmendoza@jmendoza-ThinkPad-T420:~$ docker exec -it ubuntu bash
+
+root@0bbacb4bacf4:/# passwd          
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+root@0bbacb4bacf4:/# sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+root@0bbacb4bacf4:/# service ssh stop   
+root@0bbacb4bacf4:/# service ssh start
+root@0bbacb4bacf4:/# service ssh status
+
+##############SSH Keygen##############
+jmendoza@jmendoza-ThinkPad-T420:~$ ssh-keygen -t rsa -C "jmendoza@example.org"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/jmendoza/.ssh/id_rsa): ansibleKeyRsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in ansibleKeyRsa.
+Your public key has been saved in ansibleKeyRsa.pub.
+The key fingerprint is:
+SHA256:ejaXKmejLwQMh5UERlLhW5gSpPICczBb9JO/14TFhcs jmendoza@example.org
+The key's randomart image is:
++---[RSA 2048]----+
+|*=O*o.     ..    |
+|.Xo+o.   ...     |
+|B =+=    .o.     |
+|o= ooo   oE      |
+|. o  .. S .      |
+| .    .o o .     |
+|     .o = +      |
+|      o+++       |
+|      .Bo.       |
++----[SHA256]-----+
+
+jmendoza@jmendoza-ThinkPad-T420:~$ ssh-copy-id -i ansibleKeyRsa root@172.17.0.2
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "ansibleKeyRsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@172.17.0.2's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'root@172.17.0.2'"
+and check to make sure that only the key(s) you wanted were added.

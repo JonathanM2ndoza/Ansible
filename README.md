@@ -18,5 +18,11 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo apt-get install ansible -y
 
 ![Screenshot](/Prtsc/Ansible_1.png)
 
+## Ansible Inventory
+
+jmendoza@jmendoza-ThinkPad-T420:~$ sudo vim /etc/ansible/hosts 
+
+![Screenshot](/Prtsc/Ansible_2.png)
+
 
 

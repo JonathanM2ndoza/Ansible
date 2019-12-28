@@ -47,3 +47,24 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo vim /etc/ansible/ansible.cfg
 ## Ansible ad-hoc command 
 
 ![Screenshot](/Prtsc/Ansible_7.1.png)
+
+![Screenshot](/Prtsc/Ansible_8.png)
+
+### Install VIM in Managed Node
+
+![Screenshot](/Prtsc/Ansible_9.png)
+
+jmendoza@jmendoza-ThinkPad-T420:~$ ansible 172.17.0.2 -m apt -a 'name=vim state=present' -b -K
+
+![Screenshot](/Prtsc/Ansible_9.1.png)
+
+![Screenshot](/Prtsc/Ansible_9.2.png)
+
+![Screenshot](/Prtsc/Ansible_9.3.png)
+
+![Screenshot](/Prtsc/Ansible_9.4.png)
+
+![Screenshot](/Prtsc/Ansible_9.5.png)
+
+
+

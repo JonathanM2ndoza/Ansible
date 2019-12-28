@@ -20,9 +20,3 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo apt-get install ansible -y
 
 
 
-
-![Screenshot](/Prtsc/Ansible_2.png)
-
-![Screenshot](/Prtsc/Ansible_3.png)
-
-![Screenshot](/Prtsc/Ansible_4.png)

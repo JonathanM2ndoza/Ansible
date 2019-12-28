@@ -28,7 +28,7 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo vim /etc/ansible/hosts
 
 ### Configure your host to access with ssh (Managed Node)
 
-For help see file commands.txt
+For help see file [commands.txt](commands.txt)
 
 ![Screenshot](/Prtsc/Ansible_3.png)
 

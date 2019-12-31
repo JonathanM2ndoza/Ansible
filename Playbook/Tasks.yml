@@ -1,0 +1,9 @@
+---
+  - hosts: 172.17.0.2
+    tasks: 
+    - name: Install Vim
+      apt: name=vim state=present
+      become: true
+    - name: Greeting
+      shell: echo Hello Daughter
+...

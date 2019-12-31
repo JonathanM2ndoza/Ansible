@@ -1,0 +1,12 @@
+---
+  - hosts: 172.17.0.2
+    become: true
+    tasks: 
+    - name: Install Apache2
+      apt: name=apache2 state=present update_cache=true
+      notify:
+        - "Restarted Apache2"
+    handlers:
+    - name: Restarted Apache2
+      service: name=apache2 state=restarted
+...

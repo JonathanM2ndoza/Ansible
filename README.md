@@ -87,3 +87,21 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/Ansible/Playbook$ ansible-playboo
 ![Screenshot](/Prtsc/Ansible_11.2.png)
 
 ![Screenshot](/Prtsc/Ansible_11.3.png)
+
+### Example 3: Apache2.yml - Handlers
+
+hosts: 172.17.0.2 
+
+![Screenshot](/Prtsc/Ansible_12.png)
+
+![Screenshot](/Prtsc/Ansible_12.1.png)
+
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/Ansible/Playbook$ ansible-playbook Apache2.yml -K
+
+![Screenshot](/Prtsc/Ansible_12.2.png)
+
+hosts: 172.17.0.2 
+
+![Screenshot](/Prtsc/Ansible_12.3.png)
+
+![Screenshot](/Prtsc/Ansible_12.4.png)

@@ -68,10 +68,22 @@ jmendoza@jmendoza-ThinkPad-T420:~$ ansible 172.17.0.2 -m apt -a 'name=vim state=
 
 ## Ansible Playbooks
 
-File: Tasks.yml -K
+### File: Tasks.yml
 
 ![Screenshot](/Prtsc/Ansible_10.1.png)
 
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/Ansible/Playbook$ ansible-playbook Tasks.yml -K
 
 ![Screenshot](/Prtsc/Ansible_10.png)
+
+### File: Nginx.yml
+
+![Screenshot](/Prtsc/Ansible_11.png)
+
+![Screenshot](/Prtsc/Ansible_11.1.png)
+
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/Ansible/Playbook$ ansible-playbook Nginx.yml -K
+
+![Screenshot](/Prtsc/Ansible_11.2.png)
+
+![Screenshot](/Prtsc/Ansible_11.3.png)

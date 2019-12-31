@@ -1,0 +1,7 @@
+---
+  - hosts: 172.17.0.2
+    tasks: 
+    - name: Stop Nginx
+      service: name=nginx state=stopped
+      become: true
+...

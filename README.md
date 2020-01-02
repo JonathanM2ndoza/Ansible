@@ -18,7 +18,7 @@ jmendoza@jmendoza-ThinkPad-T420:~$ sudo apt-get install ansible -y
 
 ![Screenshot](/Prtsc/Ansible_1.png)
 
-## Ansible Inventory
+## Ansible Inventory: Part One
 
 Add your host in /etc/ansible/hosts 
 
@@ -105,3 +105,17 @@ hosts: 172.17.0.2
 ![Screenshot](/Prtsc/Ansible_12.3.png)
 
 ![Screenshot](/Prtsc/Ansible_12.4.png)
+
+## Ansible Inventory: Part Two
+
+jmendoza@jmendoza-ThinkPad-T420:/etc/ansible$ vim servers 
+
+![Screenshot](/Prtsc/Ansible_13.png)
+
+![Screenshot](/Prtsc/Ansible_13.1.png)
+
+jmendoza@jmendoza-ThinkPad-T420:/etc/ansible$ vim servers
+
+![Screenshot](/Prtsc/Ansible_13.2.png)
+
+![Screenshot](/Prtsc/Ansible_13.3.png)

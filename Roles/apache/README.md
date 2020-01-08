@@ -36,3 +36,29 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+
+Example Simple Role Apache
+------------------
+
+## 1: ansible-galaxy init apache --offline
+
+![Screenshot](/Prtsc/Ansible_14.png)
+
+## 2: create files for role apache
+
+![Screenshot](/Prtsc/Ansible_14.1.png)
+
+## 3: ansible-playbook site.yml --syntax-check
+
+![Screenshot](/Prtsc/Ansible_14.2.png)
+
+## 4: ansible-playbook site.yml
+
+![Screenshot](/Prtsc/Ansible_14.3.png)
+
+## 5: Service Apache status
+
+![Screenshot](/Prtsc/Ansible_14.4.png)
+
+

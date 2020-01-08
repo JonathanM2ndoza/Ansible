@@ -2,6 +2,6 @@
 #Start apache service
 
 - name: starting apache service
-  service: name=httpd state=started
+  service: name=apache2 state=started
 
 ...

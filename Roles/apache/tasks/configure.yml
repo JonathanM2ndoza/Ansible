@@ -1,7 +1,7 @@
 ---
-#Configuring httpd.conf and sending sample html file
-  - name: httpd.conf file
-    copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+#Configuring apache2.conf and sending sample html file
+  - name: apache2.conf file
+    copy: src=apache2.conf dest=/etc/apache2/apache2.conf
     notify:
       - restart apache service
 

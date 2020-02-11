@@ -1,6 +1,16 @@
 # Ansible
 
-Example of how to use Ansible
+Ansible is a powerful tool for the orchestration of enterprise environments.
+Ansible Automation manages the Ansible technology used by thousands of organizations globally to
+help them automate IT tasks such as configuration management, provisioning, workflow orchestra-
+tion, application deployment, and life-cycle management.
+
+![Screenshot](/Prtsc/Ansible_intro1.png)
+
+# Ansible Architecture
+
+![Screenshot](/Prtsc/Ansible_intro2.png)
+
 
 ## Install Ansible on Ubuntu 18.04.3 LTS (Controlling Machine)
 

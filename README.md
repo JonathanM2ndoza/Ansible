@@ -1,9 +1,6 @@
 # Ansible
 
-Ansible is a powerful tool for the orchestration of enterprise environments.
-Ansible Automation manages the Ansible technology used by thousands of organizations globally to
-help them automate IT tasks such as configuration management, provisioning, workflow orchestra-
-tion, application deployment, and life-cycle management.
+Ansible is a software tool that provides simple but powerful automation for cross-platform computer support. It is primarily intended for IT professionals, who use it for application deployment, updates on workstations and servers, cloud provisioning, configuration management, intra-service orchestration, and nearly anything a systems administrator does on a weekly or daily basis. Ansible doesn't depend on agent software and has no additional security infrastructure, so it's easy to deploy.
 
 ![Screenshot](/Prtsc/Ansible_intro1.png)
 
